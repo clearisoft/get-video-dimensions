@@ -8,15 +8,18 @@ module.exports = function (filename) {
     '-of', 'flat=s=_',
     '-select_streams', 'v:0',
     '-show_entries', 'stream=height,width',
+    '-show_entries', 'tags=rotate',
     filename
   ]).then(function (out) {
     var stdout = out[0].toString('utf8');
     var width = /width=(\d+)/.exec(stdout);
     var height = /height=(\d+)/.exec(stdout);
+    var rotate = parseInt(/rotate=(\d+)/.exec(stdout));
+    var swap = 0 != ((rotate + 360) % 180);
     assert(width && height, 'No dimensions found!');
     return {
-      width: parseInt(width[1]),
-      height: parseInt(height[1]),
+      width: parseInt(swap ? height[1] : width[1]),
+      height: parseInt(swap ? width[1] : height[1]),
     };
   });
 }
