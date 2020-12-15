@@ -1,10 +1,13 @@
 {
-  "name": "get-video-dimensions",
+  "name": "@clearisoft/get-video-dimensions",
   "description": "Get the dimensions of a video",
   "version": "1.0.0",
-  "author": "Jonathan Ong <me@jongleberry.com> (http://jongleberry.com)",
+  "author": "clearisoft <clearisoft@aliyun.com>",
   "license": "MIT",
-  "repository": "mgmtio/get-video-dimensions",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/clearisoft/get-video-dimensions.git"
+  },
   "dependencies": {
     "mz": "^2.1.0"
   },
@@ -26,5 +29,13 @@
   ],
   "files": [
     "index.js"
-  ]
+  ],
+  "bugs": {
+    "url": "https://github.com/clearisoft/get-video-dimensions/issues"
+  },
+  "homepage": "https://github.com/clearisoft/get-video-dimensions#readme",
+  "main": "index.js",
+  "directories": {
+    "test": "test"
+  }
 }
