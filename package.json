@@ -1,7 +1,7 @@
 {
-  "name": "@clearisoft/get-video-dimensions",
-  "description": "Get the dimensions of a video",
-  "version": "1.0.0",
+  "name": "get-video-width-height",
+  "description": "Get the width and height of a video",
+  "version": "v1.0.0",
   "author": "clearisoft <clearisoft@aliyun.com>",
   "license": "MIT",
   "repository": {
