@@ -8,7 +8,7 @@ module.exports = function (filename) {
     '-of', 'flat=s=_',
     '-select_streams', 'v:0',
     '-show_entries', 'stream=height,width',
-    '-show_entries', 'tags=rotate',
+    '-show_entries', 'stream_tags=rotate',
     filename
   ]).then(function (out) {
     var stdout = out[0].toString('utf8');
